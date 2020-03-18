@@ -1,0 +1,18 @@
+public class CS265_Project4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Inventory item1 = new Inventory(1001, "02-27-2018", 101);
+        Inventory item2 = new Inventory(1002, "02-28-2018", 102);
+        Inventory item3 = new Inventory(1003, "02-26-2018", 103);
+        
+        InventoryQueue queue = new InventoryQueue(3);
+        queue.enqueue(item1);
+        queue.enqueue(item2);
+        queue.enqueue(item3);
+        
+        System.out.print(queue);
+    }
+}
